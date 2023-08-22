@@ -1,0 +1,79 @@
+/* ヘッダー要素全体のスタイル */
+header {
+    background-color: #333; /* 背景色 */
+    height: 10dvh; /* 高さ */
+  }
+  
+  /* コンテナ要素のスタイル */
+  .container {
+    max-width: 1200px; /* 最大幅 */
+    margin: 0 auto; /* 中央寄せ */
+    display: flex; /* フレックスボックス */
+    vertical-align: middle; /* 縦方向の中央揃え */
+  }
+  
+  /* ロゴ要素のスタイル */
+  .logo {
+    flex: 1; /* フレックスアイテムの伸び率 */
+  }
+  
+  /* ロゴ画像のスタイル */
+  .logo img {
+    width: 150px; /* 幅 */
+    height: auto; /* 高さは自動 */
+  }
+  
+  /* メニュー要素のスタイル */
+  .menu {
+    flex: 3; /* フレックスアイテムの伸び率 */
+  }
+  
+  /* メニューリストのスタイル */
+  .menu ul {
+    list-style: none; /* リストマーカーなし */
+    display: flex; /* フレックスボックス */
+    justify-content: space-around; /* 横方向の均等配置 */
+  }
+  
+  /* メニューリンクのスタイル */
+  .menu a {
+    color: white; /* 文字色 */
+    text-decoration: none; /* 下線なし */
+    font-size: 2dvw; /* 文字サイズ */
+  }
+
+  .button001 a {
+    text-decoration: none;
+    background: #276580;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+    padding: 10dvh 10dvw;
+    margin: 10dvh 10dvw auto;
+    font-size: 3dvh;
+}
+.button001 a:hover {
+    background: #b5edff;
+    color: #000000;
+}
+.button001 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button001 a:hover:after {
+    border-color: #FFF;
+}
+
